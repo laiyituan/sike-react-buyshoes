@@ -61,3 +61,87 @@ a {
   text-decoration: none;
 }
 */
+
+.site {
+  flex-direction: row;
+  height: 100%;
+}
+
+.site__main,
+.site__right-sidebar {
+  height: 100%;
+  flex-basis: 0;
+}
+
+.site__main {
+  flex-direction: row;
+  background: red;
+  flex-grow: 7;
+  height: 100%;
+}
+
+.site__right-sidebar {
+  flex-direction: column;
+  background: blue;
+  flex-grow: 3;
+  height: 100%;
+}
+
+.site__left-sidebar {
+  flex-grow: 0;
+  flex-basis: auto;
+  background: yellow;
+  position: fixed;
+  width: 170px;
+  height: 100%;
+}
+
+.site__content {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding-left: 170px;
+}
+
+.cart {
+  flex-basis: 0;
+  flex-grow: 1;
+  padding-top: 40px;
+}
+
+.cart__content {
+  overflow-y: scroll;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.cart-item {
+  height: 150px;
+  margin-bottom: 20px;
+  background: rgba(0, 255, 0, 0.3);
+}
+
+.cart__title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: red;
+}
+
+.checkout {
+  flex-basis: auto;
+  flex-grow: 0;
+  background: yellow;
+  height: 300px;
+  background: rgba(0, 0, 255, 0.3);
+}
+
+.products {
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.product {
+  width: 50%;
+  background: gray;
+  height: 250px;
+}
