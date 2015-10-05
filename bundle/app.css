@@ -424,7 +424,7 @@ th {
 }
 
 body, html {
-  height: 100%;
+  /*height: 100%;*/
   width: 100%;
 }
 
@@ -473,6 +473,7 @@ body {
   background-image: url("../img/bg.jpg");
   background-repeat: repeat-x;
   background-position: 0 100%;
+  background-size: cover;
 }
 
 h1 {
@@ -511,7 +512,7 @@ a {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 100%;
+  /*height: 100%;*/
   width: 100%;
   background: -webkit-linear-gradient(top, #F7F8FA, rgba(247,248,250,0.1));
   background: linear-gradient(to bottom, #F7F8FA, rgba(247,248,250,0.1));

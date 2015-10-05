@@ -1,10 +1,7 @@
 function makeCartScrollNicely(){
-    var cart = document.querySelector('.cart__content'),
-        content = document.querySelector('.site__content');
+    var cart = document.querySelector('.cart__content');
 
     Ps.initialize(cart);
-    Ps.initialize(content);
-
 }
 
 window.onload = function() {
@@ -12,7 +9,7 @@ window.onload = function() {
     $toggle.addEventListener("click",function() {
       document.body.classList.toggle("js-show-right-sidebar");
     });
-    
+
     console.log("page loaded");
     makeCartScrollNicely();
 };
