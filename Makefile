@@ -5,7 +5,11 @@ css:
 
 .PHONY: server
 server:
-	browser-sync start --server --files='index.html,bundle/app.css,js/app.js'
+	browser-sync start --server --files='index.html,bundle/app.css,js/app.js,build/main.js'
+
+.PHONY: js
+js:
+	babel --watch js/main.jsx -o build/main.js
 
 
 .PHONY: clean
@@ -14,4 +18,4 @@ clean:
 
 .PHONY: dev
 dev:
-	make server & make css
+	make server & make css & make js & wait

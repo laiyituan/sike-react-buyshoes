@@ -2,6 +2,7 @@
 
 body, html {
   /*height: 100%;*/
+  min-height: 100%;
   width: 100%;
 }
 
@@ -173,6 +174,7 @@ a {
   flex-direction: row;
   width: 33%;
   justify-content: center;
+  align-items: center;
 }
 
 .adjust-qty__button {
@@ -188,6 +190,15 @@ a {
 
 .adjust-qty__number {
   margin: 0 15px;
+}
+
+.adjust-qty--gray {
+  height: 90px;
+}
+
+.adjust-qty--gray .adjust-qty__button {
+  background: #D8D8D8;
+  color: #fff;
 }
 
 .cart__title {
@@ -308,6 +319,7 @@ a {
   border: 5px solid #d8d8d8;
   background: #fff;
   align-items: center;
+  min-height: 220px;
 }
 
 .product__img {
@@ -318,8 +330,8 @@ a {
   font-size: 24px;
   font-weight: bold;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 10px;
+  right: 10px;
 }
 
 .product__add {
